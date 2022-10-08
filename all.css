@@ -1,0 +1,245 @@
+body {
+  background-color: rgb(99, 99, 99);
+  height: 3000px;
+  /* ----------HOVERS, TRANSITIONS, SHADOWS ----------*/
+  /* ---------------CSS GRID----------------*/
+  /*------------------FLEXBOX------------------*/
+  /*-----------------NESTED FLEXBOX----------------*/
+  /*-------------------POSITION FIXED--------------*/
+  /*----------POSITION ABSOLUTE AND RELATIVE---------*/
+}
+body .one {
+  background-color: rgba(61, 52, 143, 0.288);
+  padding: 0 10px 10px 10px;
+}
+body .one p {
+  margin-top: 0;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+body .one div {
+  display: inline-block;
+}
+body .one .subscribe {
+  background-color: rgb(180, 0, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: opacity 0.2s;
+}
+body .one .subscribe:hover {
+  opacity: 0.8;
+}
+body .one .subscribe:active {
+  opacity: 0.5;
+}
+body .one .join {
+  color: rgb(0, 195, 255);
+  border: solid 2px rgb(0, 195, 255);
+  padding: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: opacity 0.2s;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+}
+body .one .join:hover {
+  background-color: rgb(0, 195, 255);
+  color: white;
+}
+body .one .join:active {
+  opacity: 0.5;
+}
+body .one .tweet {
+  background-color: rgb(0, 162, 255);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-weight: bold;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+body .one .tweet:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.637);
+}
+body .one .tweet:active {
+  opacity: 0.8;
+}
+body .two {
+  background-color: rgba(61, 52, 143, 0.288);
+  padding: 0 10px 10px 10px;
+  margin-top: 10px;
+}
+body .two p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+body .two .a {
+  grid-template-columns: 200px 75px;
+  display: grid;
+}
+body .two .a .px {
+  background-color: lightblue;
+}
+body .two .a .ba {
+  background-color: lightpink;
+}
+body .two .b {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 50px 1fr 75px;
+}
+body .two .b .col-one {
+  background-color: lightblue;
+}
+body .two .b .col-two {
+  background-color: lightpink;
+}
+body .two .c {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 10px;
+}
+body .two .c .lightpink {
+  background-color: lightpink;
+}
+body .three {
+  background-color: rgba(61, 52, 143, 0.288);
+  padding: 0 10px 10px 10px;
+  margin-top: 10px;
+}
+body .three p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+body .three .flex-a {
+  display: flex;
+}
+body .three .flex-a .flex-pxa {
+  background-color: lightblue;
+  width: 200px;
+}
+body .three .flex-a .flex-pxb {
+  background-color: lightpink;
+  width: 75px;
+}
+body .three .flex-b {
+  margin-top: 10px;
+  display: flex;
+}
+body .three .flex-b .item-a {
+  background-color: lightblue;
+  width: 50px;
+}
+body .three .flex-b .item-b {
+  background-color: lightpink;
+  flex: 1;
+}
+body .three .flex-b .item-c {
+  background-color: lightblue;
+  width: 75px;
+}
+body .three .flex-c {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+body .three .flex-c .lightpink {
+  background-color: lightpink;
+}
+body .three .flex-d {
+  margin-top: 10px;
+  border: solid 1px rgb(214, 214, 214);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .three .flex-d .last-flex {
+  background-color: lightpink;
+}
+body .four {
+  background-color: rgba(61, 52, 143, 0.288);
+  padding: 0 10px 10px 10px;
+  margin-top: 10px;
+}
+body .four p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+body .four .nested-one {
+  display: flex;
+  height: 50px;
+}
+body .four .nested-one .nest-one {
+  background-color: lightpink;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .four .nested-one .nest-one .black {
+  color: white;
+  background-color: black;
+}
+body .four .nested-one .nest-two {
+  background-color: lightblue;
+  width: 200px;
+}
+body .four .nested-two {
+  margin-top: 10px;
+  height: 50px;
+  display: flex;
+}
+body .four .nested-two .nes-one {
+  background-color: lightpink;
+  width: 100px;
+}
+body .four .nested-two .nes-two {
+  background-color: lightblue;
+  width: 200px;
+}
+body .four .nested-two .nes-two .row {
+  display: flex;
+  justify-content: space-between;
+}
+body .four .nested-two .nes-two .row .row-b {
+  background-color: black;
+  color: white;
+}
+body .fix {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+body .x {
+  color: white;
+  background-color: black;
+  display: inline-block;
+  padding: 5px 7px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 163px;
+  right: 308px;
+}
+body .box {
+  width: 320px;
+  height: 180px;
+  background-color: rgb(177, 177, 177);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}/*# sourceMappingURL=all.css.map */
